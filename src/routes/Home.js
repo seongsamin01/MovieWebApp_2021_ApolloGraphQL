@@ -65,9 +65,8 @@ export default () => {
                 <Subtitle>Just do it</Subtitle>
             </Header>
             {loading && <Loading>로딩 중...</Loading>}
-            {!loading && data.movies && (
                 <Movies>
-                    {data.movies.map(m => (
+                    {data?.movies?.map(m => (
                         <Movie key={m.id} id={m.id} bg={m.medium_cover_image} />
                     ))}
                 </Movies>
