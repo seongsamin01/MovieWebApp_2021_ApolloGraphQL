@@ -61,8 +61,8 @@ export default () => {
     return (
         <Container>
             <Header>
-                <Title>Apollo 2021</Title>
-                <Subtitle>I love GraphQL</Subtitle>
+                <Title>MovieAPI ApolloGQL 2021</Title>
+                <Subtitle>Just do it</Subtitle>
             </Header>
             {loading && <Loading>로딩 중...</Loading>}
             {!loading && data.movies && (
